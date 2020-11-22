@@ -25,7 +25,8 @@
   },
   "scripts": {
     "clean": "gulp clean",
-    "serve": "gulp develop",
+    "lint": "gulp lint",
+    "serve": "gulp serve",
     "build": "gulp build"
   },
   "browserslist": [
