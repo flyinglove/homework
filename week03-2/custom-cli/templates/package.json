@@ -1,0 +1,27 @@
+{
+  "name": "<%= appname %>",
+  "version": "0.1.0",
+  "private": true,
+  "description": "<%= description %>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "gulp clean",
+    "lint": "gulp lint",
+    "dev": "gulp develop  ",
+    "build": "gulp build"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead" 
+  ],
+  "dependencies": {
+    "bootstrap": "4.4.1",
+    "jquery": "3.4.1",
+    "popper.js": "1.16.1"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
