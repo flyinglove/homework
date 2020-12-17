@@ -9,12 +9,12 @@
 ToDo:
 一、还原vue-cli原有能力
     开发阶段：
-        [] babel
+        [X] babel
         [] ts
-        [] lint
-        [] 支持scss, sass, less, stylus编译
+        [X] lint
+        [X] 支持scss, sass, less, stylus编译
         [] postcss
-        [] 支持加载图片，字体
+        [X] 支持加载图片，字体
         [] hmr
     生产：
         [] 代码压缩
