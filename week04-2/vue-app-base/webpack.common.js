@@ -5,6 +5,25 @@ module.exports = {
     entry: {
         app:  './src/main.js'
     },
+    module:  {
+        rules: [{
+            test: /\.vue$/,
+            use: 'vue-loader'
+        }, {
+            test: /\.js$/,
+            use: {
+                loader: 'babel-loader'
+            }
+        }, {
+            test: /\.png$/,
+            use: {
+                loader: 'url-loader',
+                options: {
+                    esModule:  false
+                }
+            }
+        }]
+    },
     output: {
         path: path.join(__dirname, 'dist'),
         filename: '[name].bundle.js'

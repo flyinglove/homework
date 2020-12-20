@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "webpack-dev-server --config webpack.dev.js",
-    "build": "echo \"请使用 Webpack 实现此任务\"",
+    "build": "webpack --mode production --config webpack.prod.js",
     "lint": "echo \"请使用 ESLint 实现此任务\""
   },
   "dependencies": {
@@ -16,13 +16,17 @@
     "@babel/preset-env": "^7.12.11",
     "@vue/cli-plugin-babel": "^4.5.9",
     "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.0.0-beta.1",
     "less": "^4.0.0",
     "less-loader": "^7.1.0",
+    "mini-css-extract-plugin": "^1.3.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
     "process": "^0.11.10",
     "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.0.3",
     "url-loader": "^4.1.1",
     "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.12",

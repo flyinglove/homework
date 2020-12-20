@@ -14,27 +14,11 @@ module.exports = merge(baseWebpack, {
     devtool: 'eval-cheap-module-source-map',
     module: {
         rules: [{
-            test: /\.vue$/,
-            use: 'vue-loader'
-        }, {
-            test: /\.js$/,
-            use: {
-                loader: 'babel-loader'
-            }
-        }, {
             test: /\.less$/,
             use: ['style-loader', 'css-loader',  'less-loader']
         }, {
             test: /\.css$/,
             use: ['style-loader', 'css-loader']
-        }, {
-            test: /\.png$/,
-            use: {
-                loader: 'url-loader',
-                options: {
-                    esModule:  false
-                }
-            }
         }]
     },
     plugins: [
@@ -47,6 +31,9 @@ module.exports = merge(baseWebpack, {
         new webpack.ProvidePlugin({
             process: 'process/browser'
         }),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.DefinePlugin({
+            NODE_ENV: JSON.stringify('development')
+        })
     ]
 })
