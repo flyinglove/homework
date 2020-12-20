@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "dependencies": {
+    "snabbdom": "^2.1.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
